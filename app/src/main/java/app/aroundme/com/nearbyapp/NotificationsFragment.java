@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import models.Config;
 import models.OfferResponse;
 import models.Offers;
 import rest.ApiClient;
@@ -33,6 +34,7 @@ public class NotificationsFragment extends ListFragment {
     String seoStr;
     List<Offers> offers;
     ListView lv;
+    Config config;
     UserOfferAdapter adapter;
     ProgressBar pBar;
     GPSTracker gps;
