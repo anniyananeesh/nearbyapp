@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.aroundme.com.nearbyapp.ReviewsListFragment"
+    android:background="@color/colorFragmentBg">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="#fff">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb_progess1"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:elevation="10dp"
+                android:translationZ="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/lv_write_review"
+                android:alpha="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write a review about Royal Forte Hotel"
+                    android:id="@+id/text_head"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:theme="@style/AppTheme.FormHead"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Put your rating"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/text_head"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:theme="@style/AppTheme.FormLabel"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:layout_alignBottom="@+id/et_business_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write your review"
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:theme="@style/AppTheme.FormLabel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/et_review_message"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/input"
+                    android:layout_marginBottom="15dp"
+                    android:inputType="text|textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Review"
+                    android:id="@+id/btn_send_request"
+                    android:layout_marginTop="25dp"
+                    android:theme="@style/AppTheme.ButtonPrimary"
+                    android:background="#28b3e7"
+                    android:layout_below="@+id/et_email" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

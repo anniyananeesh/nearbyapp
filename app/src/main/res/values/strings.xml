@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">nearby</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">SETTINGS</string>
+
+    <!-- Menu item-->
+    <string name="menu_quick_menu">MENU</string>
+    <string name="menu_home">HOME</string>
+    <string name="menu_add_business">ADD YOUR BUSINESS</string>
+    <string name="menu_account">ACCOUNT</string>
+    <string name="menu_signin">SIGN IN</string>
+    <string name="menu_favourites">FAVOURITES</string>
+    <string name="menu_signout">SIGN OUT</string>
+    <string name="menu_offers">OFFERS</string>
+
+    <!-- Main category text -->
+    <string-array name="main_category_title">
+        <item>ATMs</item>
+        <item>Banks</item>
+        <item>Bar</item>
+        <item>Beauty Salon</item>
+        <item>Book Store</item>
+        <item>Bus Stations</item>
+        <item>Beverages</item>
+        <item>Cafe</item>
+
+        <item>Dentist</item>
+
+        <item>Department Store</item>
+        <item>Doctor</item>
+        <item>Gym</item>
+        <item>Hospital</item>
+        <item>Movie Theatre</item>
+        <item>Parking</item>
+        <item>Pharmacy</item>
+        <item>Restaurant</item>
+
+        <item>Shopping Mall</item>
+        <item>Spa</item>
+        <item>Travel Agency</item>
+        <item>Food</item>
+    </string-array>
+
+    <!-- Main category seo -->
+    <string-array name="main_category_seo">
+        <item>atm</item>
+        <item>bank</item>
+        <item>bar</item>
+        <item>beauty_salon</item>
+        <item>book_store</item>
+        <item>bus_station</item>
+        <item>liquor_store</item>
+        <item>cafe</item>
+        <item>dentist</item>
+
+        <item>department_store</item>
+        <item>doctor</item>
+        <item>gym</item>
+        <item>hospital</item>
+        <item>movie_theater</item>
+        <item>parking</item>
+        <item>pharmacy</item>
+        <item>restaurant</item>
+
+        <item>shopping_mall</item>
+        <item>spa</item>
+        <item>travel_agency</item>
+        <item>food</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="facebook_app_id">1797659647159467</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="adbanner_home_footer">ca-app-pub-1417162167864676/7546627746</string>
+    <string name="read_reviews">Read Reviews</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="by_signing_in_you_agree_to_nearby_terms_and_policies">By signing in, you agree to nearby terms and policies</string>
+</resources>
