@@ -67,7 +67,7 @@ public class Tab2Fragment extends ListFragment {
 
         ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
 
-        Call<OfferResponse> call = apiService.getOffersByLocation(this.seo, String.valueOf(gps.getLatitude()), String.valueOf(gps.getLongitude()), "10");
+        Call<OfferResponse> call = apiService.getOffersByLocation(this.seo, String.valueOf(gps.getLatitude()), String.valueOf(gps.getLongitude()), "10", "");
 
         call.enqueue(new Callback<OfferResponse>() {
 

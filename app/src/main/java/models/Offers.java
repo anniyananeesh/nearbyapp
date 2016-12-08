@@ -12,7 +12,7 @@ public class Offers {
     @SerializedName("offer_title")
     private String offerTitle;
 
-    @SerializedName("_id")
+    @SerializedName("offer")
     private String offerId;
 
     @SerializedName("subscriber")

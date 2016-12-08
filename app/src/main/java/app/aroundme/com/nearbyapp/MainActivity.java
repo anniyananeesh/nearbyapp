@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.support.design.widget.NavigationView;
@@ -32,6 +33,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -541,6 +543,20 @@ public class MainActivity extends AppCompatActivity
 
             });
 
+            lv.setOnScrollListener(new AbsListView.OnScrollListener() {
+
+                @Override
+                public void onScrollStateChanged(AbsListView absListView, int i) {
+                    //Log.d("Onscroll Changed", String.valueOf(i));
+                }
+
+                @Override
+                public void onScroll(AbsListView absListView, int firstItem, int visibleItemCount, final int totalItems) {
+                    Log.d("Onscroll Changed", String.valueOf(visibleItemCount));
+                }
+
+            });
+
             inputSearch = (EditText) getActivity().findViewById(R.id.search_text);
 
             inputSearch.addTextChangedListener(new TextWatcher() {
@@ -594,7 +610,6 @@ public class MainActivity extends AppCompatActivity
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
         }
-
     }
 }
 

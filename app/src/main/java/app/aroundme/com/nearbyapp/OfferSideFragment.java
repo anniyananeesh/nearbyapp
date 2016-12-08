@@ -103,7 +103,7 @@ public class OfferSideFragment extends Fragment {
         final String lastOfferID = (config.get_last_offerID() != null) ? config.get_last_offerID() : "";
 
         ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
-        Call<NotificationsCategoryResponse> call = apiService.getAllOffers(lastOfferID);
+        Call<NotificationsCategoryResponse> call = apiService.getAllOffers("");
 
         call.enqueue(new Callback<NotificationsCategoryResponse>() {
 

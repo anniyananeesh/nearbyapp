@@ -17,7 +17,7 @@ public interface ApiInterface {
 
 
     @GET("offers")
-    Call<OfferResponse> getOffersByLocation(@Query("type") String type, @Query("lat") String latitude, @Query("lng") String longitude, @Query("md") String minDistance);
+    Call<OfferResponse> getOffersByLocation(@Query("type") String type, @Query("lat") String latitude, @Query("lng") String longitude, @Query("md") String minDistance, @Query("last_offer_id") String lastOfferID);
 
     @FormUrlEncoded
     @POST("add_profile")
